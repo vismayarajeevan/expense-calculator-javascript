@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color:#f4f4f9 ;
+    color: #333;
+}
+.container{
+    max-width: 600px;
+    border-radius: 8px;
+    background: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    color: #007bff;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15x;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button{
+    margin-top: 20px;
+    width: 100%;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+ 
+}
+button:hover{
+    background-color: #0056b3;
+}
+
+.results{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.expense-details{
+    margin-top: 20px;
+}
+
+.expense-list{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media(max-width:760px) 
+{
+.container{
+    max-width: 400px;
+}    
+h1{
+    margin-top: 10px;
+    font-size: 25px;
+}
+}
+
+@media(max-width:480px) 
+{
+.container{
+    max-width: 300px;
+}    
+h1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+}

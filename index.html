@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="shortcut icon" type="image" href="logo.png">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Budget Calculator</h1>
+
+        <!-- input fields -->
+         <label for="salary">Enter Your Monthly Salary:</label>
+         <input type="number" name="" id="salary" placeholder="Enter your salary">
+
+         <label for="expense-name">Expense name:</label>
+         <input type="text" name="" id="expense-name" placeholder="Enter expense name">
+ 
+         <label for="expense-amount">Expense Amount:</label>
+         <input type="number" name="" id="expense-amount" placeholder="Enter expense amount">
+
+         <!-- buttons -->
+        
+              <button onclick="addExpense()">Add Expense</button>
+      
+
+         <div class="results">
+            <p><strong>Total salary: </strong>$ <span id="total-salary" style="color: green;">0</span></p>
+            <p><strong>Total Expenses: </strong>$ <span id="total-expense" style="color: red;">0</span></p>
+            <p><strong>Remaining Balance: </strong>$ <span id="remaining-balance" style="color: orange;">0</span></p>
+
+         </div>
+
+         <!-- expense details -->
+          <div class="expense-details" id="expense-details">
+            <h3>Expense Details:</h3>
+
+          </div>
+         
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
